@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+		<html>
+		<head>
+				<meta charset="UTF-8">
+					<title>Cool Slice</title>
+				<style>
+					body{
+						margin:0;
+						padding: 0;
+						background-color: #00bbff;
+					}
+					#btn{
+						height: 40px;
+						width: 200px;
+						background-color: transparent;
+						border:none;
+						outline: none;
+						border:1px solid whitesmoke;
+						position: absolute; 
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						border-radius: 3px;
+						font-size: 20px;
+						color: #2d2d2d;
+						font-family:sans-serif;
+						overflow: hidden;
+						cursor: pointer; 
+
+
+					}
+					#btn:before{
+						content: '';
+						height: 40px;
+						width: 10px;
+						background-color: whitesmoke;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform:translate(-50%,-50%) skewX(-25deg);
+						z-index: -1;
+						transition: all .4s;
+
+					}
+					#btn:hover:before
+					{
+						
+						width: 240px;
+					}
+				
+
+				</style>
+			</head>
+			<body>
+					<button id="btn">Sign up</button>
+			</body>
+		</html>
